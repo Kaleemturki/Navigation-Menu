@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #87c1dc;
+        color: #333;
+
+    }
+
+    section {
+        padding: 100px 20px;
+        min-height: 100vh;
+
+    }
+
+    
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 20px;
+        z-index: 1000;
+        transition: green 0.3s;
+    }
+
+    #navbar.scrolled {
+        background-color: #ac9797;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 20px;
+        transition: red 0.3s brown 0.3s;
+    }
+
+    nav-links li a:hover {
+        background-color: #fff;
+        color: #333;
+        
+    }
+    .homes {
+        display: flex;
+        align-items: center;
+        align-content: center;
+
+    }
+   .container p{
+    display: flex;
+    align-items: center;
+    align-content: center;
+   }
+</style>
+<script>
+    
+    window.onscroll = function () {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    };
+</script>
+
+<body>
+
+    
+    <nav id="navbar">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+   
+    <section id="home">
+        <div class="container"></div>
+        <h1>Home Section</h1>
+        <p>
+            <h2>My Home as The Most Beautiful Place for Me</h2>
+            <h3>My house is a cozy haven where I feel safe and loved. It's a two-story structure with a warm, inviting exterior. As you enter, you're greeted by a spacious living room where my family gathers for quality time. The kitchen is the heart of our home, where delicious meals are prepared and stories are shared.</h3>
+            
+            <img src="Home.jpg"width="450px" height="450px">
+        </div>
+        
+        </p>
+    </section>
+    <section id="about">
+        <h1>About Section</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quaerat quae quasi aspernatur dolores
+            deserunt odio voluptates impedit magni. Est iste laboriosam quam dolores velit sit dignissimos non quia,
+            possimus rerum assumenda fuga libero alias praesentium maiores numquam quasi deleniti quae. Omnis molestias
+            quam architecto enim error, facilis tempore corrupti, repellat temporibus eaque voluptates culpa non quo
+            libero fugit totam, eveniet cum. Cumque fuga saepe, ipsa earum sit tenetur porro illo ullam autem esse
+            officiis, dolore sapiente quia! Officia consectetur, blanditiis quo esse totam aspernatur sed ipsum, maxime
+            doloribus non nulla id, veritatis quisquam distinctio debitis a quas ullam molestias! Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Natus assumenda quo quam exercitationem soluta, facere quae accusamus
+            saepe eius dolores distinctio non ad animi placeat mollitia fuga excepturi, aperiam odit dolore veritatis
+            sint aut cupiditate maxime corrupti. Architecto et aliquid expedita culpa eaque at nisi nesciunt tempora.
+            Iure incidunt, dolorum quas voluptate dolore at laudantium nostrum quam corporis? Illo quisquam esse
+            delectus, eaque perspiciatis eos officia suscipit sit reprehenderit aliquid nobis in nemo deserunt tenetur
+            enim minima consectetur impedit quos consequatur eum? Illum doloremque enim expedita rem, deleniti mollitia
+            dolore obcaecati quis tenetur, fugiat nihil debitis facere molestiae perspiciatis. Tenetur quidem distinctio
+            explicabo odio dignissimos cum, asperiores at molestiae quia impedit nesciunt ipsam aliquam minus dicta,
+            voluptas harum accusamus! Incidunt est quidem laborum quaerat id molestias odit aliquam, minus voluptatem
+            corrupti placeat voluptate optio vero illo pariatur maiores corporis excepturi voluptatum eius dolorum
+            tenetur magni vitae ea. Nemo odio quos repellendus obcaecati. Vero, vitae odit! Sint, consequuntur natus aut
+            itaque ipsum modi quam quidem blanditiis architecto laborum officiis fugiat ratione dolor cum delectus
+            inventore assumenda debitis ullam culpa, nisi velit. Quos doloribus illum dolores voluptate, necessitatibus
+            omnis dolorum! Veniam optio laudantium, natus quod at voluptas sapiente dolorum modi provident quas odio.
+            Omnis eius non in mollitia vel nisi possimus debitis eos fugit, atque dicta voluptate pariatur vitae minima
+            enim. Magnam, illo! Aliquam adipisci blanditiis sunt aut nulla aspernatur nostrum a animi, voluptatem enim,
+            similique quia repellat voluptate est? Assumenda mollitia, nemo, obcaecati esse atque vitae aliquid adipisci
+            perferendis cum laudantium numquam quidem, labore eos. Commodi perspiciatis, fugiat ab culpa nobis
+            reiciendis dolor quo sapiente dolores architecto, quod, soluta nesciunt veritatis libero quas excepturi
+            blanditiis assumenda dicta possimus iure magnam id expedita magni consequatur! Repellendus excepturi libero
+            voluptates ducimus magnam obcaecati? Quis adipisci iure recusandae pariatur quasi dicta nihil. Laudantium,
+            voluptate.</p>
+    </section>
+    <section id="services">
+        <h1>Services Section</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis harum aliquam pariatur, minus in id
+            quod, ad iste praesentium eum esse rem neque excepturi minima totam explicabo molestiae molestias commodi
+            nostrum nisi enim. Enim debitis, expedita reiciendis voluptatum voluptates minus unde praesentium sint
+            ullam, nobis pariatur illo facilis animi magni molestiae temporibus perspiciatis, repellat adipisci!
+            Perspiciatis, mollitia temporibus, aut soluta debitis velit ipsum nostrum distinctio impedit, libero hic
+            dolorem accusantium itaque laudantium. Et commodi tempora ratione modi vitae autem consequuntur dolores
+            dolorem voluptatum veniam. Doloribus neque, veniam qui facilis repellendus excepturi alias tempora voluptas
+            facere nemo ipsum blanditiis, corrupti magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            error consequuntur unde veniam voluptatem accusamus adipisci corrupti voluptate, nam molestiae odio saepe
+            facilis praesentium repellat? Eius consequuntur esse voluptatum numquam consectetur? Nostrum accusantium
+            libero dicta quia atque nemo ab eveniet rerum, aperiam perferendis eos, odio cupiditate aspernatur eaque,
+            quos fugiat quis alias? Neque adipisci commodi, earum quisquam culpa quae quam omnis iusto. Illum tempora,
+            nisi, nam perspiciatis magnam voluptate ipsum porro asperiores beatae in illo ab ullam! Perferendis
+            consequuntur sint, dicta dolores officia suscipit nemo, numquam dolor quidem aliquid asperiores mollitia
+            vero magni facere esse tempora! Error iusto similique hic rerum necessitatibus doloremque autem
+            consequuntur, cum culpa voluptatem facilis dicta beatae ea sint doloribus sapiente minima, a quis
+            aspernatur. Facere veniam repellat provident, delectus, autem dignissimos perspiciatis ratione iusto quidem
+            error nihil nobis esse vitae optio iure placeat aut sit rerum dolorum nemo obcaecati magni minus beatae?
+            Nisi, facilis voluptatem quibusdam nesciunt cum reiciendis incidunt, hic ullam eos vero totam sequi numquam.
+            Cupiditate illo officiis numquam tempora explicabo adipisci quasi, dolore illum repellat dicta amet,
+            assumenda, id odio totam. Aperiam delectus deleniti voluptas molestias sit? Rem hic alias perferendis
+            molestiae neque maiores nobis labore porro velit vitae aspernatur architecto ex ab natus illum molestias
+            enim, consequatur sequi, laboriosam doloribus accusantium quia asperiores ipsa. Asperiores ullam quidem
+            omnis sapiente? Cupiditate beatae explicabo repudiandae. Vitae minus tempore omnis nesciunt repellendus
+            laboriosam. Ea consectetur natus, officia molestiae nulla enim necessitatibus expedita error! Porro eius,
+            delectus, dolore consequatur odit adipisci, saepe quas reprehenderit praesentium libero veniam impedit
+            itaque. Sed unde exercitationem molestias id non earum facilis, eum ullam ad recusandae expedita, blanditiis
+            repudiandae cum quis. Reprehenderit in neque unde modi officia. Porro esse non voluptates harum nobis ab
+            necessitatibus pariatur laborum laudantium voluptatibus atque iste numquam nihil distinctio quisquam
+            dolores, quis provident enim alias.</p>
+    </section>
+    <section id="contact">
+        <h1>Contact Section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut amet consectetur quidem veritatis eius nemo
+            consequatur vel? Praesentium minus placeat impedit quidem excepturi voluptas, harum corrupti incidunt
+            distinctio soluta consectetur, aliquid error sint dicta deserunt illo ad doloribus, amet cum alias fuga
+            expedita. Quibusdam, exercitationem rem. Consectetur, cumque esse sunt ratione, magnam accusamus dicta earum
+            soluta, quam saepe similique! Nesciunt laudantium quam tenetur repudiandae natus nam facilis molestiae
+            accusantium, esse, placeat dolorem? Excepturi voluptates est quae culpa cupiditate similique deserunt
+            veritatis repellat vitae? Nemo, animi, non sunt magnam id aliquid a, iure aspernatur sequi hic molestiae
+            obcaecati illo asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores, et
+            doloremque rerum voluptatibus officiis nesciunt non error quisquam impedit earum culpa. Vero, dolores.
+            Cupiditate alias qui corrupti nemo fugit odit delectus recusandae eaque excepturi a placeat, velit
+            temporibus animi veritatis voluptatibus rem, ipsam esse explicabo impedit aliquid laborum distinctio. Non
+            eveniet quisquam doloribus vero quaerat molestias quam, laboriosam iure sit eius nihil aspernatur, possimus
+            odio similique sunt quod illum commodi exercitationem expedita iste eligendi rem enim voluptatibus pariatur!
+            Tempora odit saepe facere magni quaerat! Mollitia dicta nemo quod qui laudantium explicabo odit eligendi
+            quidem? Omnis necessitatibus tenetur, facilis vitae voluptas sed at doloremque id dolor labore cum rem quos
+            eum nam repellendus similique obcaecati laborum repudiandae, soluta odit cupiditate quae illo minima.
+            Aspernatur, dolor omnis ex minus quod itaque accusamus ipsa facere eveniet excepturi possimus tenetur
+            minima, tempore, nesciunt tempora consectetur. Laudantium quos dolores at odio adipisci doloribus blanditiis
+            dignissimos consectetur reprehenderit repudiandae, vero in amet labore delectus. Eaque ducimus molestiae,
+            atque ipsum non deleniti! Nihil aut, possimus id minima asperiores debitis sapiente earum magni animi
+            tempore omnis quaerat sint modi ut laudantium velit minus mollitia, odit, vero molestiae? Illo sunt,
+            perspiciatis rerum ullam, ipsum libero iure reiciendis labore suscipit nesciunt obcaecati ratione expedita
+            omnis molestiae porro corporis odio neque odit voluptate! Veniam deleniti est soluta itaque accusantium in
+            provident illum, quis dolorum ad mollitia voluptas tenetur cupiditate? Suscipit reprehenderit sapiente
+            repellat sit sint maiores animi, facilis, voluptate autem a ratione voluptatem ex nesciunt cupiditate
+            laudantium deleniti! Possimus eaque nisi iusto excepturi, harum ratione qui, esse sit quos ad exercitationem
+            eveniet magni vero? Velit tempora, aperiam libero ea a ipsum quaerat repudiandae debitis asperiores, ipsam
+            placeat. Minima, consequuntur quisquam. Cum impedit facilis cupiditate dolore eveniet voluptatem eum maiores
+            vel unde nemo velit consequatur, dolorum ex totam. In, doloremque deleniti! </p>
+    </section>
+
+
+</body>
+<script>
+    // Change the navbar style when the page is scrolled
+    window.onscroll = function () {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    };
+</script>
+
+
+</html>
